@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    min-height: 100vh;
+}
+
+section .card__wrapper {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+section .card__wrapper .card {
+    width: 28%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 30px;
+
+}
+
+section .card__wrapper .card p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section .section__wrapper {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section .section__wrapper .section__item {
+    width: 48%;
+    border: 1px solid magenta;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+@media only screen and (max-width:680px) {
+    section .section__wrapper .section__item {
+        width: 100%;
+    }
+
+    section .section__wrapper {
+        flex-direction: column-reverse;
+    }
+}
+
+
+section .section__item img {
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:) @media only screen and (max-width:1200px) {
+    section .card__wrapper .card {
+        width: 27%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    section .card__wrapper .card {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width:765px) {
+    section .card__wrapper .card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    section .card__wrapper {
+        padding: 3rem;
+    }
+
+    section .card__wrapper .card {
+        width: 100%;
+    }
+}
